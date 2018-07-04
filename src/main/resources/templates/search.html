@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            align: "center";
+            -webkit-border-radius: 30px 30px 30px 30px;
+            border-radius: 30px 30px 30px 30px;
+        }
+    </style>
+</head>
+<body>
+<div  >
+
+    <p align="center">Welcome to SJW search tool! </p>
+    <p align="center">Please provide the site name and the word you would like to check </p>
+
+    <form th:action="@{/search}"  method="post"  align="center">
+        <p>sitename: <input type="text" id="sitename" name="sitename" required/></p>
+
+        <p>word: <input type="word" id="word" name="word" required/></p>
+
+        <p><input type="submit" value="Submit" /></p>
+
+
+    </form>
+</div>
+</body>
+</html>
